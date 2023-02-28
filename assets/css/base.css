@@ -7,6 +7,8 @@
     --color-three: #ff589e;
     --color-four: #8261ee;
     --color-five: #777777;
+    --color-eight: #f2f2fe;
+    --color-nine: #6F8BA4;
 }
 
 .container{
@@ -41,6 +43,22 @@ hr{
    transition: 0.6s;
 }
 
+
+.button1 a{
+    padding: 10px 20px 10px 20px;
+    background-color: var(--color-four);
+    border-radius: 100px;
+    color: var(--color-one);
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.button1:hover a{
+    background-color: var(--color-three);
+    transition: 0.6s;
+ }
+
 .backgroud-img {
     position: relative;
 }
@@ -51,3 +69,37 @@ hr{
     width: 100%;
     position: relative;
 }
+
+
+/* reponsive */
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
